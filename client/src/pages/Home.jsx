@@ -16,6 +16,14 @@ function Home() {
               </span>
               from around the world.
             </h1>
+            <p className="text-gray-500 pl-20 pt-6">
+              {" "}
+              Unleash Freelancing's Future: Seamlessly Navigate Contracts with
+              Smart
+              <br />
+              Contract Technology, Fueled by Web3 Innovation, on Our
+              Revolutionary App
+            </p>
           </div>
         </div>
 
