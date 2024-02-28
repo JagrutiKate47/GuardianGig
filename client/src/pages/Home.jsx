@@ -9,8 +9,8 @@ function Home() {
       <Navbar />
 
       <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-1/2 bg-black flex justify-center items-center">
-  <div className="text-center px-10 ">
+      <div className="w-full md:w-1/2 bg-black flex justify-center items-center ">
+  <div className="text-center md:text-left  px-10 ">
     <h1 className="text-white text-4xl md:text-5xl pt-20 md:pt-0  ">
       Find the
       <span className="bg-gradient-to-r mx-4 from-[#912d9c] via-blue-400 to-[#0ABCF9] text-transparent bg-clip-text">
