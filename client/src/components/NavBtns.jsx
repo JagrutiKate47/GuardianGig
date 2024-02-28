@@ -3,7 +3,7 @@ import React from 'react'
 function NavBtns() {
   return (
     <div>
-        <div className=" flex bg-transparent mt-2 pt-1  ml-10 font-bold">
+        <div className=" flex bg-transparent pt-1  ml-10 md:font-bold">
             <select className=" w-[110px] text-gray-600 bg-none outline-none bg-transparent">
                 <option>Find Talent</option>
                 <option>Hire now</option>
