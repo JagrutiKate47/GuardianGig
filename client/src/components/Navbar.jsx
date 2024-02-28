@@ -51,10 +51,11 @@ function Navbar() {
             <ul className="font-bold md:font-medium md:flex  p-4 md:p-0 mt-4 border border-gray-10 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-2 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <NavBtns></NavBtns>
               <li className="hidden md:block">
-                <SignupButton></SignupButton>
+              <LoginButton></LoginButton>
+               
               </li>
               <li className="hidden md:block">
-                <LoginButton></LoginButton>
+              <SignupButton></SignupButton>
               </li>
             </ul>
           </div>
