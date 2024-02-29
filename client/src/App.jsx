@@ -6,8 +6,8 @@ import Login from "./pages/Login";
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      <Login></Login>
+      <Home />
+      {/* <Login></Login> */}
       
     </>
   );
