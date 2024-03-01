@@ -5,7 +5,7 @@ function HamburgerMenu() {
   return (
     <div>
         <div className=' md:hidden'>
-        <GiHamburgerMenu value={{ color: 'blue', size: '50px' }}/>
+        <GiHamburgerMenu value={{ color: 'blue', size: '40px',  }}/>
         </div>
 
 

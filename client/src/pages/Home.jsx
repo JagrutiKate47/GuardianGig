@@ -34,57 +34,9 @@ function Home() {
 
       <Category />
       <About/>
+      </div>
 
-      <div className="flex justify-between">
-            <div className="mt-10 text-left grid grid-cols-1 md:grid-cols-2 gap-8 w-1/2">
-              <div className="bg-gray-300 bg-opacity-25 rounded-2xl p-4 hover:scale-110 transition-all duration-100 ease-in-out">
-                <h3 className="text-2xl font-bold mb-4">
-                  Transparent Earnings with Smart Contracts
-                </h3>
-                <p className="text-lg">
-                  Ensure secure and predictable payments through our smart
-                  contract system powered by Solidity. Experience financial
-                  stability with clearly defined payment milestones.
-                </p>
-              </div>
-              <div className="bg-gray-300 bg-opacity-25 rounded-2xl p-4 hover:scale-110 transition-all duration-100 ease-in-out">
-                <h3 className="text-2xl font-bold mb-4">
-                  Direct Connect, Better Projects:
-                </h3>
-                <p className="text-lg">
-                  Communicate directly with employers to understand project
-                  intricacies. Forge meaningful relationships and shape your
-                  freelance career with seamless, peer-to-peer interactions.
-                </p>
-              </div>
-              <div className="bg-gray-300 bg-opacity-25 rounded-2xl p-4 hover:scale-110 transition-all duration-100 ease-in-out">
-                <h3 className="text-2xl font-bold mb-4">
-                  Global Opportunities at Your Fingertips
-                </h3>
-                <p className="text-lg">
-                  Access a world of freelance opportunities on our decentralized
-                  platform. Connect with employers globally, diversify your
-                  portfolio, and expand your professional horizons
-                </p>
-              </div>
-              <div className="bg-gray-300 bg-opacity-25 rounded-2xl p-4 hover:scale-110 transition-all duration-100 ease-in-out">
-                <h3 className="text-2xl font-bold mb-4">
-                  Fair Compensation in a Trustworthy Space
-                </h3>
-                <p className="text-lg">
-                  Trust in a platform designed for fairness. Benefit from our
-                  commitment to cryptocurrency transactions, cryptographic
-                  trust, and a minimal 5% service charge, ensuring a reliable
-                  and secure freelancing ecosystem.
-                </p>
-              </div>
-            </div>
-            <div className="w-1/2">
-              <img className="" src="src/assets/secondassetimage.jpg" alt="" />
-            </div>
-          </div>
-          
-    </div>
+    
   );
 }
 
