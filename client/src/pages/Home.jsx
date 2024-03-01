@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <Navbar />
 
       <div className="flex flex-col md:flex-row">
@@ -34,6 +35,7 @@ function Home() {
 
       <Category />
       <About/>
+      <Footer></Footer>
       </div>
 
     
