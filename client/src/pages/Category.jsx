@@ -30,11 +30,7 @@ function Category() {
 }
 
 function Card({ image, desc }) {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleCardClick = () => {
-    setIsFlipped(!isFlipped);
-  };
+  
   return (
     <div class="flip-card">
   <div class="flip-card-inner">
