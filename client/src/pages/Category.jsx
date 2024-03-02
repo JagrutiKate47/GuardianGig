@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from 'react';
+import './Card.css'
 import Artist from "../assets/Artist.png";
 import DataAnalyst from "../assets/DataAnalyst.png";
 import editor from "../assets/editor.png";
@@ -28,23 +29,29 @@ function Category() {
   );
 }
 
-function Card({ image, desc, text }) {
+function Card({ image, desc }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
   return (
-    <div className="max-w-sm bg-[#071A2D] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div className="flex justify-center">
+    <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
         <img
           className="border-double border-4 border-sky-500 mt-12"
           src={image}
           alt={desc}
         />
-      </div>
-      <div className="p-5 flex flex-col items-center">
+        </div>
+        <div className="flip-card-back">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">
           {desc}
         </h5>
 
-        <button className="inline-flex items-center px-4 py-2 mt-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 via-[#002E41] to-blue-500 rounded-lg hover:from-[#002E41] hover:via-[#002E41] hover:to-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gradient-to-r dark:from-pink-800 dark:via-pink-700 dark:to-blue-700 dark:hover:from-pink-900 dark:hover:via-pink-800 dark:hover:to-blue-800 dark:focus:ring-blue-800 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500">
-          Hire a talent
+        <button className="inline-flex items-center px-4 py-2 mt-3 text-sm font-medium text-white bg-gradient-to-r from-pink-600 via-pink-500 to-blue-500 rounded-lg hover:from-pink-700 hover:via-pink-600 hover:to-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gradient-to-r dark:from-pink-800 dark:via-pink-700 dark:to-blue-700 dark:hover:from-pink-900 dark:hover:via-pink-800 dark:hover:to-blue-800 dark:focus:ring-blue-800 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500">
+          Search more
           <svg
             className="rtl:rotate-180 w-4 h-4 ms-2"
             aria-hidden="true"
@@ -61,8 +68,9 @@ function Card({ image, desc, text }) {
             />
           </svg>
         </button>
+        </div>
       </div>
-    </div>
+     </div>
   );
 }
 

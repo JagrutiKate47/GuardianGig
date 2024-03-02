@@ -3,11 +3,15 @@ import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
 import Footer from "../components/Footer";
+import Test from "../components/Test";
 
 function Home() {
+  
+
   return (
     <div className="bg-black">
       <Navbar />
+     
 
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 bg-black flex justify-center items-center">
@@ -32,10 +36,12 @@ function Home() {
           />
         </div>
       </div>
+    
 
       <Category />
       <About/>
       <Footer></Footer>
+      
       </div>
 
     
