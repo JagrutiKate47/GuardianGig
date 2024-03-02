@@ -6,7 +6,7 @@ import NavMobileMenu from "./NavMobileMenu";
 import SignupButton from "./SignupButton"
 import LoginButton from "./LoginButton"
 
-function Navbar() {
+function Navbar({ color }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +15,8 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="bg-black md:bg-black border-gray-200 dark:bg-gray-900">
+     <nav className={`bg-${color} md:bg-${color} border-gray-200 `}>
+
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-8" alt="Flowbite Logo" />

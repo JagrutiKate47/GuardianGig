@@ -43,8 +43,8 @@ function Card({ image, desc, text }) {
           {desc}
         </h5>
 
-        <button className="inline-flex items-center px-4 py-2 mt-3 text-sm font-medium text-white bg-gradient-to-r from-pink-600 via-pink-500 to-blue-500 rounded-lg hover:from-pink-700 hover:via-pink-600 hover:to-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gradient-to-r dark:from-pink-800 dark:via-pink-700 dark:to-blue-700 dark:hover:from-pink-900 dark:hover:via-pink-800 dark:hover:to-blue-800 dark:focus:ring-blue-800 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500">
-          Search more
+        <button className="inline-flex items-center px-4 py-2 mt-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 via-[#002E41] to-blue-500 rounded-lg hover:from-[#002E41] hover:via-[#002E41] hover:to-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gradient-to-r dark:from-pink-800 dark:via-pink-700 dark:to-blue-700 dark:hover:from-pink-900 dark:hover:via-pink-800 dark:hover:to-blue-800 dark:focus:ring-blue-800 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500">
+          Hire a talent
           <svg
             className="rtl:rotate-180 w-4 h-4 ms-2"
             aria-hidden="true"
