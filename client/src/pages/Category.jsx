@@ -36,17 +36,17 @@ function Card({ image, desc }) {
     setIsFlipped(!isFlipped);
   };
   return (
-    <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
-        <img
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img
           className="border-double border-4 border-sky-500 mt-12"
           src={image}
           alt={desc}
         />
-        </div>
-        <div className="flip-card-back">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">
+      </div>
+    <div class="flip-card-back">
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">
           {desc}
         </h5>
 
@@ -68,9 +68,10 @@ function Card({ image, desc }) {
             />
           </svg>
         </button>
-        </div>
-      </div>
-     </div>
+    </div>
+  </div>
+</div>
+    
   );
 }
 
