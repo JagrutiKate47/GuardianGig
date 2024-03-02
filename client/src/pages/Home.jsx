@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
-import Footer from "../components/Footer";
-//import Test from "../components/Test";
+import Footer from "../components/Footer"; 
+import FreelanceShow from "./FreelanceShow";
 
 function Home() {
   
@@ -41,6 +41,7 @@ function Home() {
       <Category />
       <About/>
       <Footer></Footer>
+      
       
       </div>
 
