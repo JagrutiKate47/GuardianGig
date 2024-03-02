@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
 import Footer from "../components/Footer";
-import SellerUserP from "./SellerUserP";
 
 function Home() {
   return (
@@ -37,7 +36,6 @@ function Home() {
       <Category />
       <About/>
       <Footer></Footer>
-      <SellerUserP/>
       </div>
 
     
