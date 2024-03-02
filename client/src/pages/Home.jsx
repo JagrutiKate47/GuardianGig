@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
 import Footer from "../components/Footer";
-import Test from "../components/Test";
+//import Test from "../components/Test";
 
 function Home() {
   
