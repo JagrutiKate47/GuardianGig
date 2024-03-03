@@ -13,7 +13,7 @@ function NavBtns() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* First select dropdown for finding talent */}
           <select
-            className={`w-full md:w-28 py-2 md:py-4 text-gray-900 mr-6 md:text-gray-400 bg-${
+            className={`w-full md:w-28 py-2 md:py-4 text-gray-400 mr-6 md:text-gray-400 bg-${
               isOpen ? 'black' : 'transparent'
             } rounded-md outline-none border-2 ${
               isOpen ? 'border-blue-800' : 'border-gray-300'
@@ -29,7 +29,7 @@ function NavBtns() {
 
           {/* Second select dropdown for finding work */}
           <select
-            className={`w-full md:w-28 py-2 md:py-4 text-gray-900 md:text-gray-400 bg-${
+            className={`w-full md:w-28 py-2 mt-6 -ml-5 md:mt-0 md:py-4 text-gray-400 md:text-gray-400 bg-${
               isOpen ? 'black' : 'transparent'
             } rounded-md outline-none border-2 ${
               isOpen ? 'border-blue-800' : 'border-gray-300'
@@ -43,10 +43,10 @@ function NavBtns() {
           </select>
 
           {/* Link for "Why us" */}
-          <a href="/" className="block mt-2 md:mt-0 text-gray-900 md:text-gray-400 font-bold hover:text-blue-500 md:font-normal md:ml-8">Why us</a>
+          <a href="/" className="block mt-6 md:mt-0  text-gray-400 md:text-gray-400 font-bold text-xl md:text-base hover:text-blue-500 md:font-normal md:ml-8">Why us</a>
 
           {/* Link for "About" */}
-          <a href="/" className="block mt-2 md:mt-0 text-gray-900 md:text-gray-400 font-bold hover:text-blue-500 md:font-normal md:ml-8 md:mr-6">About</a>
+          <a href="/" className="block mt-4 md:mt-0  text-gray-400 md:text-gray-400 font-bold text-xl md:text-base hover:text-blue-500 md:font-normal md:ml-8 md:mr-6">About</a>
         </div>
       </div>
     </div>

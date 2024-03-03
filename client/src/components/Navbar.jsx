@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+
 import logo from "../assets/logo.png";
 import SearchBar from "./SearchBar";
 import NavBtns from "./NavBtns";
@@ -19,7 +21,6 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img src={logo} className="h-8" alt="Flowbite Logo" />
-            <SearchBar />
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <NavBtns />
@@ -29,12 +30,12 @@ function Navbar() {
           <button
             onClick={toggleMenu}
             type="button"
-            className="md:hidden focus:outline-none"
+            className="md:hidden focus:outline-none p-2" // Added padding to the button
             aria-controls="navbar-default"
             aria-expanded={isOpen ? "true" : "false"}
           >
             <svg
-              className="w-6 h-6 text-gray-500 hover:text-white"
+              className="w-8 h-8 text-gray-500 hover:text-white" // Increased text size
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +54,9 @@ function Navbar() {
           className={`w-full md:hidden ${isOpen ? "" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="flex flex-col items-start space-y-4 mt-4">
+          <ul className="flex flex-col items-start mt-8  ">
             <NavMobileMenu />
+            <NavBtns /> {/* Include NavBtns in mobile menu */}
             <li>
               <SignupButton />
             </li>
@@ -66,4 +68,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
