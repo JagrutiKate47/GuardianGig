@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 function Login() {
   return (
     <div className='flex justify-center h-screen items-center overflow-x-hidden bg-gray-900'>
-      <div className='bg-[#111827] md:p-20 w-full flex flex-col justify-center items-center md:w-1/4 h-3/4 border-2 rounded-2xl'>
+      <div className='bg-[rgb(17,24,39)] md:p-20 w-full flex flex-col justify-center items-center md:w-1/4 h-3/4 border-2 rounded-2xl'>
 <h1 className='text-white text-3xl mb-10'>Login</h1>
         <form className="max-w-sm mx-auto">
           <div className="mb-5">

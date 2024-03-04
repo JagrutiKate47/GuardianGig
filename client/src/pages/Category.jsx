@@ -41,7 +41,7 @@ function Card({ image, desc, info }) {
           <p className="text-lg text-center mb-6 px-4">
            {info}
           </p>
-          <button className="px-8 py-2 text-sm font-medium bg-black rounded-lg hover:bg-[#73C2FB] hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500 text-white">
+          <button className="px-8 flex py-3  items-center text-sm font-medium bg-black rounded-lg hover:bg-[#73C2FB] hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500 text-white">
             Search more
             <svg
               className="rtl:rotate-180 w-4 h-4 ms-2"
