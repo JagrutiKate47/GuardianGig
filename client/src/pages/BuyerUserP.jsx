@@ -8,12 +8,8 @@ function BuyerUserP() {
     Balance: null,
 });
 
-// Button handler button for handling a
-// request event for metamask
 const btnhandler = () => {
-    // Asking if metamask is already present or not
     if (window.ethereum) {
-        // res[0] for fetching a first wallet
         window.ethereum
             .request({ method: "eth_requestAccounts" })
             .then((res) =>
@@ -24,17 +20,13 @@ const btnhandler = () => {
     }
 };
 
-// getbalance function for getting a balance in
-// a right format with help of ethers
 const getbalance = (address) => {
-    // Requesting balance method
     window.ethereum
         .request({
             method: "eth_getBalance",
             params: [address, "latest"],
         })
         .then((balance) => {
-            // Setting balance
             setdata({
                 Balance:
                     ethers.utils.formatEther(balance),
@@ -42,19 +34,15 @@ const getbalance = (address) => {
         });
 };
 
-// Function for getting handling all events
 const accountChangeHandler = (account) => {
-    // Setting an address data
     setdata({
         address: account,
     });
 
-    // Setting a balance
     getbalance(account);
 };
   return (
     <div className="bg-[#071A2D] h-screen pt-10 px-4 md:px-8">
-      <div className="App">
  
             <div className="text-center text-white">
                 
@@ -67,7 +55,6 @@ const accountChangeHandler = (account) => {
                         </button>
                 
             </div>
-        </div>
       <div className="flex md:grid items-center justify-between">
         <a href="#">
           <button className="bg-[#00B2FF] hover:bg-[#003F59] text-black font-semibold px-4 py-1 md:px-12 md:py-2 md:ml-[45rem] md:mb-4 md:mr-4">
