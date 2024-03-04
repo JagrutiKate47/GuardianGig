@@ -9,7 +9,7 @@ function Home() {
   
 
   return (
-    <div className="bg-black">
+    <div className="bg-black ">
       <Navbar />
      
 
@@ -20,7 +20,7 @@ function Home() {
               Find the <span className="gradient-text">Best</span> from around
               the world.
             </h1>
-            <p className="text-gray-500 pt-6">
+            <p className="text-gray-500 pt-6 ">
               Unleash Freelancing's Future: Seamlessly Navigate Contracts with
               Smart Contract Technology, Fueled by Web3 Innovation, on Our
               Revolutionary App
