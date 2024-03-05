@@ -23,9 +23,11 @@ function LoginResult(){
     if (result.success) {
       // User authenticated, perform desired action (e.g., redirect to dashboard)
       console.log('User authenticated:', result.user);
+      setError('')
     } else {
       setError(result.message);
     }
+    
   };
   return {email, password,error,handleSubmit, setEmail,setPassword,setError}
 }
