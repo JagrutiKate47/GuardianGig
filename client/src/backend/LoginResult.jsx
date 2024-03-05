@@ -27,7 +27,7 @@ function LoginResult(){
       setError(result.message);
     }
   };
-  return {email, password,error,handleSubmit, setEmail,setPassword}
+  return {email, password,error,handleSubmit, setEmail,setPassword,setError}
 }
 
 
