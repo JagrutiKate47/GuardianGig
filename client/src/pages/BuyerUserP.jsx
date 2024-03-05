@@ -57,7 +57,7 @@ const accountChangeHandler = (account) => {
             </div>
       <div className="flex md:grid items-center justify-between">
         <a href="#">
-          <button className="bg-[#00B2FF] hover:bg-[#003F59] text-black font-semibold px-4 py-1 md:px-12 md:py-2 md:ml-[45rem] md:mb-4 md:mr-4">
+          <button className="bg-[#00B2FF] hover:bg-[#003F59] text-black font-semibold px-4 py-1 md:px-12 md:py-2 md:mt-4 md:ml-[45rem] md:mb-4 md:mr-4">
             Buyer
           </button>
         </a>
