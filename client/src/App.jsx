@@ -4,12 +4,12 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import BuyerUserP from "./pages/BuyerUserP";
 import SellerUserP from "./pages/SellerUserP"
-
+import Signup from "./pages/Signup";
 function App() {
   return (
     <>
-      <SellerUserP></SellerUserP>
-      <Home />
+      <Login></Login>
+      {/* <Home /> */}
       
       
     </>
