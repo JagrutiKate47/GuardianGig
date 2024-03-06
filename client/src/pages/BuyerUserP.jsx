@@ -44,17 +44,7 @@ const accountChangeHandler = (account) => {
   return (
     <div className="bg-[#071A2D] h-screen pt-10 px-4 md:px-8">
  
-            <div className="text-center text-white">
-                
-                    <strong>Address: </strong>
-                    {data.address}
-                        <strong>Balance: </strong>
-                        {data.Balance}
-                        <button className="h-8 w-48 bg-black" onClick={btnhandler}>
-                        Connect to wallet
-                        </button>
-                
-            </div>
+            
       <div className="flex md:grid items-center justify-between">
         <a href="#">
           <button className="bg-[#00B2FF] hover:bg-[#003F59] text-black font-semibold px-4 py-1 md:px-12 md:py-2 md:mt-4 md:ml-[45rem] md:mb-4 md:mr-4">
@@ -95,6 +85,17 @@ const accountChangeHandler = (account) => {
           </select>
         </div>
       </div>
+      <div className="text-center text-white">
+                
+                    <strong>Address: </strong>
+                    {data.address}
+                        <strong>Balance: </strong>
+                        {data.Balance}
+                        <button className="h-8 w-48 bg-black" onClick={btnhandler}>
+                        Connect to wallet
+                        </button>
+                
+            </div>
     </div>
   );
 }
