@@ -4,7 +4,7 @@ import Category from "./Category";
 import About from "./About";
 import Footer from "../components/Footer"; 
 import FreelanceShow from "./FreelanceShow";
-
+import { NavLink } from 'react-router-dom';
 function Home() {
   
 
