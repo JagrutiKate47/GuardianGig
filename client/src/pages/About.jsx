@@ -6,7 +6,7 @@ import trust from '../assets/trust.png';
 
 function About() {
   return (
-    <div className='mb-10'>
+    <div className='mb-10' id="about-id">
       {/* First Set */}
       <div className="flex flex-col md:flex-row justify-between bg-black md:pt-24">
         <div className="mt-10 md:w-1/2 text-center md:text-left">

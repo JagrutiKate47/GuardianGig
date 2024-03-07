@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 function NavBtns() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,8 @@ function NavBtns() {
           <a href="/" className="block mt-6 md:mt-0  text-gray-400 md:text-gray-400 font-bold text-xl md:text-base hover:text-blue-500 md:font-normal md:ml-8">Why us</a>
 
           {/* Link for "About" */}
-          <a href="/" className="block mt-4 md:mt-0  text-gray-400 md:text-gray-400 font-bold text-xl md:text-base hover:text-blue-500 md:font-normal md:ml-8 md:mr-6">About</a>
+          <Link to="about-id" smooth={true} className="block mt-4 md:mt-0  text-gray-400 md:text-gray-400 font-bold text-xl md:text-base hover:text-blue-500 md:font-normal md:ml-8 md:mr-6">
+            About</Link>
         </div>
       </div>
     </div>
