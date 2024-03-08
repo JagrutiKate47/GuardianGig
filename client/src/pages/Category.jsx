@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Card.css';
 import Artist from '../assets/Artist.png';
 import DataAnalyst from '../assets/DataAnalyst.png';
@@ -16,20 +17,20 @@ function Category() {
         Browse by Category
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:px-12 lg:px-24">
-        <Card desc={'Photographer'} image={photographer} info={'We have some of the best Photographers,hope you will enjoy working with them.'} />
-        <Card desc={'Artist'} image={Artist} info={'We have some of the best Artists,hope you will enjoy working with them.'} />
-        <Card desc={'Writer'} image={writer} info={'We have some of the best Writers,hope you will enjoy working with them.'} />
-        <Card desc={'Translation'} image={Translation} info={'We have some of the best Translators,hope you will enjoy working with them.'} />
-        <Card desc={'Editor'} image={editor} info={'We have some of the best Editors,hope you will enjoy working with them.'} />
-        <Card desc={'Finance'} image={finance} info={'We have some of the best Financers,hope you will enjoy working with them.'} />
-        <Card desc={'Data Analyst'} image={DataAnalyst} info={'We have some of the best Data Analyst,hope you will enjoy working with them.'} />
-        <Card desc={'Music Producer'} image={musicProducer} info={'We have some of the best Music Producers,hope you will enjoy working with them.'} />
+        <Card desc={'Photographer'} image={photographer} info={'We have some of the best Photographers, hope you will enjoy working with them.'} category={'photographer'} />
+        <Card desc={'Artist'} image={Artist} info={'We have some of the best Artists, hope you will enjoy working with them.'} category={'artist'} />
+        <Card desc={'Writer'} image={writer} info={'We have some of the best Writers, hope you will enjoy working with them.'} category={'writer'} />
+        <Card desc={'Translation'} image={Translation} info={'We have some of the best Translators, hope you will enjoy working with them.'} category={'translation'} />
+        <Card desc={'Editor'} image={editor} info={'We have some of the best Editors, hope you will enjoy working with them.'} category={'editor'} />
+        <Card desc={'Finance'} image={finance} info={'We have some of the best Financers, hope you will enjoy working with them.'} category={'finance'} />
+        <Card desc={'Data Analyst'} image={DataAnalyst} info={'We have some of the best Data Analyst, hope you will enjoy working with them.'} category={'data-analyst'} />
+        <Card desc={'Music Producer'} image={musicProducer} info={'We have some of the best Music Producers, hope you will enjoy working with them.'} category={'music-producer'} />
       </div>
     </div>
   );
 }
 
-function Card({ image, desc, info }) {
+function Card({ image, desc, info, category }) {
   return (
     <div className="flip-card">
       <div className="flip-card-inner">
@@ -41,7 +42,7 @@ function Card({ image, desc, info }) {
           <p className="text-lg text-center mb-6 px-4">
            {info}
           </p>
-          <button className="px-8 flex py-3  items-center text-sm font-medium bg-black rounded-lg hover:bg-[#73C2FB] hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500 text-white">
+          <Link to={`/category/${category}`} className="px-8 flex py-3  items-center text-sm font-medium bg-black rounded-lg hover:bg-[#73C2FB] hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 transition duration-300 ease-in-out hover:ring-2 hover:ring-blue-500 text-white">
             Search more
             <svg
               className="rtl:rotate-180 w-4 h-4 ms-2"
@@ -58,12 +59,11 @@ function Card({ image, desc, info }) {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
-
 
 export default Category;

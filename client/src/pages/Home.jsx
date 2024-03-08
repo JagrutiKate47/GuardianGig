@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
-import Footer from "../components/Footer"; 
-import  BuyerUserP from './BuyerUserP'
+import Footer from "../components/Footer";
 import FreelanceShow from "./FreelanceShow";
 import { NavLink } from 'react-router-dom';
 function Home() {
@@ -14,7 +13,7 @@ function Home() {
       <Navbar />
      
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row md:h-[40rem]">
         <div className="w-full md:w-1/2 bg-black flex justify-center items-center">
           <div className="text-center md:text-left md:ml-8 px-10 text-white">
             <h1 className="text-4xl md:text-5xl pt-20 md:pt-0">
@@ -42,7 +41,8 @@ function Home() {
       <Category />
       <About/>
       <Footer></Footer>
-      < BuyerUserP/>
+      
+      
      
       
       
