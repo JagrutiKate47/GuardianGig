@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ethers } from "ethers";
 import { FaUserCircle } from "react-icons/fa";
 
+
+
 function BuyerUserP() {
   const [data, setdata] = useState({
     address: "",
@@ -42,12 +44,13 @@ const accountChangeHandler = (account) => {
     getbalance(account);
 };
   return (
-    <div className="bg-[#071A2D] h-screen pt-10 px-4 md:px-8">
+    <div>
+    <div className="bg-[#071A2D] h-screen pt-10 px-4 md:px-8 md:pb-0 md:mb-0  ">
  
             
       <div className="flex md:grid items-center justify-between">
         <a href="#">
-          <button className="bg-[#00B2FF] hover:bg-[#003F59] text-black font-semibold px-4 py-1 md:px-12 md:py-2 md:mt-4 md:ml-[45rem] md:mb-4 md:mr-4">
+          <button className="bg-[#00B2FF] hover:bg-[#003F59] text-black font-semibold px-4 py-1 md:px-12 md:py-2 md:mt-4 md:ml-[40rem] md:mb-4 md:mr-4">
             Buyer
           </button>
         </a>
@@ -85,7 +88,7 @@ const accountChangeHandler = (account) => {
           </select>
         </div>
       </div>
-      <div className="text-center text-white">
+      <div className="text-center text-white md:pt-10">
                 
                     <strong>Address: </strong>
                     {data.address}
@@ -96,7 +99,16 @@ const accountChangeHandler = (account) => {
                         </button>
                 
             </div>
-    </div>
+            </div>
+
+            
+            </div>
+
+            
+
+
+
+
   );
 }
 

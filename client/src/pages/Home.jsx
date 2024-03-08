@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Category from "./Category";
 import About from "./About";
 import Footer from "../components/Footer"; 
+import  BuyerUserP from './BuyerUserP'
 import FreelanceShow from "./FreelanceShow";
 import { NavLink } from 'react-router-dom';
 function Home() {
@@ -41,6 +42,8 @@ function Home() {
       <Category />
       <About/>
       <Footer></Footer>
+      < BuyerUserP/>
+     
       
       
       </div>

@@ -21,9 +21,9 @@ function Category() {
         <Card desc={'Writer'} image={writer} info={'We have some of the best Writers,hope you will enjoy working with them.'} />
         <Card desc={'Translation'} image={Translation} info={'We have some of the best Translators,hope you will enjoy working with them.'} />
         <Card desc={'Editor'} image={editor} info={'We have some of the best Editors,hope you will enjoy working with them.'} />
-        <Card desc={'Finance'} image={finance} info={'We have some of the best Financers,hopeyou will enjoy working with them.'} />
-        <Card desc={'Data Analyst'} image={DataAnalyst} info={'We have some of the best Data Analyst,hopeyou will enjoy working with them.'} />
-        <Card desc={'Music Producer'} image={musicProducer} info={'We have some of the best Music Producers,hopeyou will enjoy working with them.'} />
+        <Card desc={'Finance'} image={finance} info={'We have some of the best Financers,hope you will enjoy working with them.'} />
+        <Card desc={'Data Analyst'} image={DataAnalyst} info={'We have some of the best Data Analyst,hope you will enjoy working with them.'} />
+        <Card desc={'Music Producer'} image={musicProducer} info={'We have some of the best Music Producers,hope you will enjoy working with them.'} />
       </div>
     </div>
   );
