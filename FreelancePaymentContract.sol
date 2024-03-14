@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract FreelancePaymentContract is Ownable, ReentrancyGuard {
+contract FreelancePaymentContract is Ownable(msg.sender), ReentrancyGuard {
     address payable public freelancer;
     address public client;
     uint256 public taskValue;
